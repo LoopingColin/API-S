@@ -1,0 +1,27 @@
+<%- include('../partials/header'); %>
+
+    <main class="main main-cartoons container">
+        <h2 class="main-h2"><%= name %>
+        </h2>
+        <section class="section section-cartoon">
+            <div class="row">
+                <% data.forEach(item=> { %>
+                    <div class="col-md-4">
+                        <figure class="figure figure-cartoon">
+                            <a href="/cartoons/<%= item.id %>">
+                                <img src="<%= item.image %>" alt="<%= item.title %>">
+                                <figcaption class="figcaption figcap-cartoon">
+                                    <%= item.title%>
+                            </figcaption>
+                            </a>
+                            <figcaption class="figcaption figcap-creator">
+                                <a href="#"><%= item.creator[0] %></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                <% }) %>
+            </div>
+        </section>
+    </main>
+
+<%- include('../partials/footer'); %>

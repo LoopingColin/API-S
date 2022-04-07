@@ -1,0 +1,45 @@
+<%- include('../partials/header'); %>
+
+
+    <main class="main main-recipes container">
+        <h2 class="main-h2">
+            <%= name %>
+        </h2>
+        <section class="section section-recipes">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <% data.forEach(item=> { %>
+                    <div class="col recipes-block">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="/recipes/<%= item.id %>">
+                                    <p>
+                                        <%= item.title %>
+                                    </p>
+                                </a>
+                                <p>Course: <%= item.course %>
+                                </p>
+                                <p>Cuisine <%= item.cuisine %>
+                                </p>
+                                <p>mainIngredient <%= item.mainIngredient %>
+                                </p>
+                                <p>Description <%= item.description %>
+                                </p>
+                                <p>Prep Time <%= item.prepTime %>
+                                </p>
+                                <p>Cook Time <%= item.cookTime %>
+                                </p>
+                                <p>total Time <%= item.totalTime %>
+                                </p>
+                                <p>Servings <%= item.servings %>
+                                </p>
+                                <p>Yield <%= item.yield %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../partials/footer'); %>

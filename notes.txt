@@ -1,0 +1,9 @@
+cd node
+mkdir sample-api
+cd sample-api
+npm init -y
+touch .gitignore server.js
+nano .gitignore
+node_modules/ *-lock.json
+npm i express, node-fetch, ejs
+nano package.json

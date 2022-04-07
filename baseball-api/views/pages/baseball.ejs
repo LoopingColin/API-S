@@ -1,0 +1,33 @@
+<%- include('../partials/header'); %>
+
+    <main class="main main-baseball container">
+        <h2 class="main-h2">
+            <%= name %>
+        </h2>
+        <section class="section section-baseball">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <% data.forEach(item=> { %>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="/baseball/<%= item.id %>">
+                                    <p>
+                                        <%= item.Player %>
+                                    </p>
+                                </a>
+                                <p>Age: <%= item.Age %>
+                                </p>
+                                <p>ERA: <%= item.ERA %>
+                                </p>
+                                <p>Year: <%= item.Year %>
+                                <p>Throws: <%= item.Throws %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../partials/footer'); %>

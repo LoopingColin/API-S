@@ -1,0 +1,28 @@
+<%- include('../partials/header'); %>
+
+    <main class="main main-drama container">
+        <h2 class="main-h2">
+            <%= name %>
+        </h2>
+        <section class="section section-drama">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <% data.forEach(item=> { %>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="/drama/<%= item.id %>">
+                                    <p>
+                                        <%= item.title %>
+                                    </p>
+                                </a>
+                                <p>IMDBID: <%= item.imdbId %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../partials/footer'); %>

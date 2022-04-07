@@ -1,0 +1,78 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eaeaea;
+}
+
+header {
+    padding: 20px 0;
+
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+/* header */
+
+.top-nav a {
+    text-transform: uppercase;
+}
+
+/* jokes page */
+
+
+.jokeDiv {
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+
+.jokeDiv::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 1px solid darkgoldenrod;
+    transition: .5s;
+}
+
+.jokeDiv:hover:after {
+    width: 110%;
+}
+
+.punchline {
+    /* color: transparent;
+    text-shadow: 0 0 5px rgba(0,0.,0,0.5); */
+
+    filter: blur(4px);
+}
+
+
+.single-punch {
+    text-align: center;
+    font-size: 56px;
+    text-transform: uppercase;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: gold;
+    }
+
+    100% {
+        color: darkblue;
+    }
+}

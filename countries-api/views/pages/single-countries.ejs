@@ -1,0 +1,17 @@
+<%- include('../partials/header');  %> 
+
+<main class="main main-single container">
+    <h2 class="main-h2"><%= name %></h2>
+
+    <section class="section section-single d-flex justify-content-between">
+        <figure class="figure figure-single">
+            <img src="<%= data.media.flag %>" alt="<%= data.abbreviation %>" class="img-fluid">
+            <img src="<%= data.media.emblem %>" class="img-fluid">
+            <figcaption class="figcaption"><%= data.capital %></figcaption>
+            <figcaption class="figcaption">currency: <%= data.currency %></figcaption>
+            <figcaption class="figcaption">name: <%= data.name %>name</figcaption>
+        </figure>
+    </section>
+</main>
+
+<%- include('../partials/footer');  %> 

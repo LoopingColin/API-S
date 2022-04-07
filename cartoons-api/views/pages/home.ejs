@@ -1,0 +1,8 @@
+<%- include('../partials/header');  %> 
+    <main class="main main-home">
+        <h2 class="home-header">welcome to my  cartoon page!</h2>
+        <img src="<%= data[Math.floor(Math.random() * data.length)].image  %>"
+        alt="home image">
+    </main>
+
+<%- include('../partials/footer');  %>     

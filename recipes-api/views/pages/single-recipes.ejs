@@ -1,0 +1,20 @@
+<%- include('../partials/header'); %> 
+
+<main class="main main-single container">
+    <h2 class="main-h2"><%= data.title %></h2>
+
+    <section class="section section-single d-flex justify-content-between">
+        <figure class="figure figure-single">
+            <figcaption class="figcaption">Ingredients: <%= data.ingredients %> </figcaption>
+            <figcaption class="figcaption">Directions: <%= data.directions %> </figcaption>
+            <figcaption class="figcaption">PublicUrl: <%= data.publicUrl %> </figcaption>
+            <figcaption class="figcaption">PhotoUrl: <%= data.photoUrl %> </figcaption>
+            <figcaption class="figcaption">Calories: <%= data.calories %> </figcaption>
+            <figcaption class="figcaption">URL: <%= data.url %> </figcaption>
+            <figcaption class="figcaption">URL HOST: <%= data.urlHost %> </figcaption>
+            <figcaption class="figcaption">Source: <%= data.source %> </figcaption>
+        </figure>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %> 

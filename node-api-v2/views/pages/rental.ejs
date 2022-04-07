@@ -1,0 +1,26 @@
+<%- include('../partials/header'); %>
+    <main>
+        <h2>
+            <%= name %>
+        </h2>
+        <section>
+            <% data.forEach(item => { %>
+                <div>
+                    <p>Title:
+                    </p>
+                     <p>
+
+                        <%= item.rental_id %>
+                        <%= item.rental_date %>
+                        <%= item.inventory_id %>
+                        <%= item.customer_id %>
+                        <%= item.return_date %>
+                        <%= item.staff_id %>
+                        <%= item.last_update %>
+                    </p>
+                </div>
+                <% }) %>
+        </section>
+    </main>
+
+    <%- include('../partials/footer'); %>

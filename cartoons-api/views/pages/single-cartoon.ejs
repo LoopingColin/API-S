@@ -1,0 +1,32 @@
+<%- include('../partials/header');  %> 
+
+<main class="main main-single container">
+    <h2 class="main-h2"><%= name %></h2>
+
+    <section class="section section-single d-flex justify-content-between">
+        <figure class="figure figure-single">
+            <img src="<%= data.image %>" alt="<%= data.title %>" class="img-fluid">
+            <figcaption class="figcaption"><%= data.year %></figcaption>
+            <figcaption class="figcaption">Rating: <%= data.rating %></figcaption>
+            <figcaption class="figcaption">Episodes: <%= data.episodes %>episodes</figcaption>
+        </figure>
+
+        <aside class="aside">
+            <h3 class="single-h3">Genre(s)</h3>
+            <ul class="single-ul">
+                <% for(let i = 0; i < data.genre.length; i++) { %>
+                    <li class="single-li"><%= data.genre[i] %></li>
+                    <% } %>
+            </ul>
+
+            <h3 class="single-h3">Creator(s)</h3>
+            <ul class="single-ul">
+                <% for(let i = 0; i < data.creator.length; i++) { %>
+                    <li class="single-li"><%= data.creator[i] %></li>
+                    <% } %>
+            </ul>
+        </aside>
+    </section>
+</main>
+
+<%- include('../partials/footer');  %> 

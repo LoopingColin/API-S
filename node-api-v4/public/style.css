@@ -1,0 +1,39 @@
+:root {
+    --bgColor: #82c911;
+    --first: rgb(39, 39, 189);
+    --second: rgb(21, 70, 67);
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bgColor);
+}
+
+.header {
+    padding: 10px;
+    background: green;
+}
+
+.header ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.header item a {
+    color: var(--prim);
+    text-decoration: none;
+}
+
+.header-item a:hover {
+    color: var(--sec);
+}
+

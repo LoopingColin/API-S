@@ -1,0 +1,26 @@
+<%- include('../partials/header'); %> 
+<main class="main">
+    <div class="container">
+        <div class="searchBar">
+            <form action="/movie" id="searchForm">
+                <input type="text" value="" placeholder="search" name="search">
+                <input type="submit" value="search">
+            </form>
+        </div>
+        <div class="row">
+            <% data.forEach(item=> { %>
+                <div class="col-md-3">
+                    <div class="movieDiv">
+                        <h3> <a href="/movie/<%= item.movie_id %> "><%= item.title %></a> </h3>
+                        <ul class="list-group">
+                            <li class="list-group-item"><%= item.year %> </li>
+                            <li class="list-group-item"><%= item.rating %> </li>
+                        </ul>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+        </div>
+    </div>
+</main>
+<%- include('../partials/footer'); %> 

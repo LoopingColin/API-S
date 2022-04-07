@@ -1,0 +1,73 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+h1 {
+    /* border: 1px solid red; */
+    padding-left: 38%;
+    color: white;
+}
+
+
+a {
+    color: #c60e30;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: white;
+}
+
+/* header */
+
+.header {
+    background: #c60e30;
+    
+}
+
+
+.home-header {
+    /* border: 1px solid red; */
+    background: #c60e30;
+    color: white;
+    padding-left: 32%;
+}    
+
+.top-nav a {
+    text-transform: uppercase;
+}    
+
+/* homepage */
+
+.baseball-img {
+ /* border: 1px solid red;  */   
+    padding-left: 32%;
+}    
+
+.nav-link {
+    /* border: 1px solid red; */
+    color: white;
+}    
+
+
+/* footer */
+
+
+.footer {
+    /* border: 1px solid yellow; */
+    background: #c60e30;
+    margin-top: 330px;
+}
+
+.colophon {
+    /* border: 1px solid red; */
+    color: white;
+}
+
+
+

@@ -1,0 +1,71 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+h1 {
+    /* border: 1px solid red; */
+    padding-left: 40%;
+    color: white;
+}
+
+
+a {
+    color: #0088c6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: white;
+}
+
+/* header */
+.episodes-block {
+    border: 1px solid red;
+}
+
+.home-header {
+    border: 1px solid red;
+    background: linear-gradient(#003e87, #005d9f, #0088c6);
+    color: white;
+    padding-left: 32%;
+}
+
+.top-nav a {
+    text-transform: uppercase;
+}
+
+/* homepage */
+
+.footer {
+    border: 1px solid yellow;
+    background: linear-gradient(#003e87, #005d9f, #0088c6);
+    margin-top: 205px;
+}
+
+.colophon {
+    border: 1px solid red;
+    color: white;
+}
+
+.playstation-img {
+ /* border: 1px solid red;  */
+    padding-left: 20%;
+}
+
+.nav-link {
+    border: 1px solid red;
+    color: white;
+}
+
+.header {
+    background: linear-gradient(#003e87, #005d9f, #0088c6);
+    
+}
+
+
+

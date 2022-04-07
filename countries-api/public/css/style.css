@@ -1,0 +1,62 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #df733b;
+}
+
+h1 {
+    /* border: 1px solid red; */
+    padding-left: 43%;
+}
+
+
+a {
+    color: #945446;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    background-color: #dbb56a;
+}
+
+/* header */
+
+.header {
+    background-color: #945446;
+    
+}
+.home-header {
+    border: 1px solid red;
+    background-color: #dbb56a;
+    color: #945446;
+    padding-left: 30%;
+}
+
+.top-nav a {
+    text-transform: uppercase;
+}
+
+/* homepage */
+.nav-link {
+    border: 1px solid red;
+    color: #df733b
+}
+
+/* footer */
+
+.footer {
+    border: 1px solid yellow;
+    background-color: #dbb56a;
+    margin-top: 530px;
+}
+
+.colophon {
+    border: 1px solid red;
+    color: #945446;
+}
+
+
+

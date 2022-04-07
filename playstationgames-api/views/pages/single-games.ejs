@@ -1,0 +1,15 @@
+<%- include('../partials/header');  %> 
+
+<main class="main main-single container">
+    <h2 class="main-h2"><%= data.name %></h2>
+
+    <section class="section section-single d-flex justify-content-between">
+        <figure class="figure figure-single">
+            <figcaption class="figcaption">Genre: <%= data.genre %> </figcaption>
+            <figcaption class="figcaption">Developers: <%= data.developers %> </figcaption>
+            <figcaption class="figcaption">Publishers: <%= data.publishers %> </figcaption>
+        </figure>
+    </section>
+</main>
+
+<%- include('../partials/footer');  %> 

@@ -1,0 +1,73 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+h1 {
+    /* border: 1px solid red; */
+    padding-left: 38%;
+    color: white;
+}
+
+
+a {
+    color: #007e00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: white;
+}
+
+/* header */
+
+.header {
+    background: #007e00;
+    
+}
+
+
+.home-header {
+    border: 1px solid red;
+    background: #007e00;
+    color: white;
+    padding-left: 32%;
+}    
+
+.top-nav a {
+    text-transform: uppercase;
+}    
+
+/* homepage */
+
+.xbox-img {
+ /* border: 1px solid red;  */   
+    padding-left: 30%;
+}    
+
+.nav-link {
+    border: 1px solid red;
+    color: white;
+}    
+
+
+/* footer */
+
+
+.footer {
+    border: 1px solid yellow;
+    background: #007e00;
+    margin-top: 240px;
+}
+
+.colophon {
+    border: 1px solid red;
+    color: white;
+}
+
+
+

@@ -1,0 +1,29 @@
+<%- include('../partials/header'); %>
+    <main>
+        <h2>
+            <%= name %>
+        </h2>
+        <section>
+            <% data.forEach(item => { %>
+                <div>
+                    <p>Title:
+                        <a href="/customer/<%= item.customer_id %> ">
+                        </a>
+                    </p>
+                     <p>
+
+                        <%= item.store_id %>
+                        <%= item.first_name %>
+                        <%= item.last_name %>
+                        <%= item.address_id %>
+                        <%= item.active %>
+                        <%= item.create_date %>
+                        <%= item.email %>
+                        <%= item.last_update %>
+                    </p>
+                </div>
+                <% }) %>
+        </section>
+    </main>
+
+    <%- include('../partials/footer'); %>

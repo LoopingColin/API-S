@@ -1,0 +1,14 @@
+<%- include('../partials/header'); %> 
+
+<main class="main main-single container">
+    <h2 class="main-h2"><%= title %> </h2>
+
+    <section class="section section-single d-flex justify-content-between">
+        <figure class="figure figure-single">
+            <figcaption class="figcaption">POSTERURL: <%= data.posterURL %> </figcaption>
+            <figcaption class="figcaption">IMDBID: <%= data.imdbId %> </figcaption>
+        </figure>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %> 

@@ -1,0 +1,68 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #952728;
+}
+
+h1 {
+    /* border: 1px solid red; */
+    padding-left: 43%;
+}
+
+
+a {
+    color: #ffcf00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: #dbb56a;
+}
+
+/* header */
+.header {
+    background-color: #ffcf00;
+    
+}
+
+
+.home-header {
+    /* border: 1px solid red; */
+    background-color: #dbb56a;
+    color: white;
+    padding-left: 32%;
+}
+
+.top-nav a {
+    text-transform: uppercase;
+}
+
+/* homepage */
+.drama-img {
+    /* border: 1px solid red;  */
+    padding-left: 28%;
+}
+
+.nav-link {
+    /* border: 1px solid red; */
+    color: #df733b
+}
+
+/* footer */
+.footer {
+    /* border: 1px solid yellow; */
+    background-color: #dbb56a;
+    margin-top: 205px;
+}
+
+.colophon {
+    /* border: 1px solid red; */
+    color: white;
+}
+
+
+
+

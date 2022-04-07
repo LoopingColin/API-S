@@ -1,0 +1,73 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+h1 {
+    /* border: 1px solid red; */
+    padding-left: 38%;
+    color: white;
+}
+
+
+a {
+    color: #e70012;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: white;
+}
+
+/* header */
+
+.header {
+    background:#e70012;
+    
+}
+
+
+.home-header {
+    border: 1px solid red;
+    background: #e70012;
+    color: white;
+    padding-left: 32%;
+}    
+
+.top-nav a {
+    text-transform: uppercase;
+}    
+
+/* homepage */
+
+.nintendo-img {
+ /* border: 1px solid red;  */   
+    padding-left: 30%;
+}    
+
+.nav-link {
+    border: 1px solid red;
+    color: white;
+}    
+
+
+/* footer */
+
+
+.footer {
+    border: 1px solid yellow;
+    background: #e70012;
+    margin-top: 240px;
+}
+
+.colophon {
+    border: 1px solid red;
+    color: white;
+}
+
+
+

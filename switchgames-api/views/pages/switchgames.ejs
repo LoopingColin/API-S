@@ -1,0 +1,32 @@
+<%- include('../partials/header'); %>
+
+  <main class="main main-switchgames container">
+        <h2 class="main-h2">
+            <%= name %>
+        </h2>
+        <section class="section section-switchgames">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <% data.forEach(item=> { %>
+                    <div class="col  nintendo-block">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="/switchgames/<%= item.id %>">
+                                    <p>
+                                        <%= item.name %>
+                                    </p>
+                                </a>
+                                <p>Genre: <%= item.genre %>
+                                </p>
+                                <p>Developers: <%= item.developers %>
+                                </p>
+                                <p>Publishers: <%= item.publishers %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </section>
+    </main>
+
+<%- include('../partials/footer'); %> 

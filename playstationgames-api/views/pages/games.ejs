@@ -1,0 +1,32 @@
+<%- include('../partials/header'); %>
+
+    <main class="main main-games container">
+        <h2 class="main-h2">
+            <%= name %>
+        </h2>
+        <section class="section section-games">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <% data.forEach(item=> { %>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="/games/<%= item.id %>">
+                                    <p>
+                                        <%= item.name %>
+                                    </p>
+                                </a>
+                                <p>Genre: <%= item.genre %>
+                                </p>
+                                <p>Developers: <%= item.developers %>
+                                </p>
+                                <p>Publishers: <%= item.publishers %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../partials/footer'); %>

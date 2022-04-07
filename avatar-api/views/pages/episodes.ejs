@@ -1,0 +1,32 @@
+<%- include('../partials/header'); %>
+
+    <main class="main main-episodes container">
+        <h2 class="main-h2">
+            <%= name %>
+        </h2>
+        <section class="section section-episodes">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <% data.forEach(item=> { %>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/media/jm.png" class="card-img-top" alt="jm animation">
+                            <div class="card-body">
+                                <a href="/episodes/<%= item.id %>">
+                                    <p>
+                                        <%= item.Title %>
+                                    </p>
+                                </a>
+                                <p>AnimatedBy: <%= item.AnimatedBy %>
+                                </p>
+                                <p>DirectedBy: <%= item.DirectedBy %>
+                                </p>
+                                <p>WrittenBy: <%= item.WrittenBy %>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../partials/footer'); %>
